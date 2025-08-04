@@ -1,4 +1,4 @@
-## Intellij Sublime Text Keymap
+## Intellij Keymap for Sublime Text 4
 
 1. Add the plugins to the **User** plugins directory. 
 On macOS, it's located at: `~/Library/Application Support/Sublime Text/Packages/User`.
