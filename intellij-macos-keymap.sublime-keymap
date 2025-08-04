@@ -1,0 +1,143 @@
+[
+  // # General
+  // Actions
+  { "keys": ["super+shift+a"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+  // # Edit
+  // Find in files
+  { "keys": ["super+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+  // Delete line
+  { "keys": ["super+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+  // Duplicate line
+  { "keys": ["super+d"], "command": "duplicate_line" },
+  // Find with selection
+  { "keys": ["super+f"], "command": "find_with_selection" },
+  // Replace with selection
+  { "keys": ["super+r"], "command": "replace_with_selection" },
+
+  // # View
+  // Recent Files
+  { "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  // Project / File tree
+  { "keys": ["super+1"], "command": "toggle_side_bar" },
+
+  // # Navigation
+  // Go to definition
+  { "keys": ["super+b"], "command": "goto_definition" },
+  // Go to class
+  { "keys": ["super+o"], "command": "goto_symbol_in_project" },
+  // Go to symbol
+  { "keys": ["super+option+o"], "command": "goto_symbol_in_project" },
+  // Go to file
+  { "keys": ["super+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  // Back
+  { "keys": ["super+["], "command": "jump_back" },
+  // Forward
+  { "keys": ["super+]"], "command": "jump_forward" },
+  // Go to line
+  { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  // Next change
+  { "keys": ["ctrl+option+shift+down"], "command": "next_modification" },
+  // Previous change
+  { "keys": ["ctrl+option+shift+up"], "command": "prev_modification" },
+
+  // # Code
+  // Reformat (Format document or selection)
+  { "keys": ["option+super+l"], "command": "smart_format" },
+  // Move line up
+  { "keys": ["option+shift+up"], "command": "swap_line_up" },
+  // Move line down
+  { "keys": ["option+shift+down"], "command": "swap_line_down" },
+
+  // # LSP
+  // Show quick documentation
+  { "keys": ["f1"], "command": "lsp_hover" },
+  // Go to declaration (TODO: make it "Declaration or Usages")
+  { "keys": ["super+b"], "command": "lsp_symbol_definition" },
+  // Go to implementation
+  { "keys": ["super+alt+b"], "command": "lsp_symbol_implementation" },
+  // Go to type definition
+  { "keys": ["ctrl+shift+b"], "command": "lsp_symbol_type_definition" },
+  // Find usages / references
+  { "keys": ["alt+f7"], "command": "lsp_symbol_references" },
+  // Rename symbol
+  { "keys": ["shift+f6"], "command": "lsp_rename" },
+  // Show code actions / intention actions
+  { "keys": ["alt+enter"], "command": "lsp_code_actions" },
+  // Show diagnostics
+  { "keys": ["super+shift+m"], "command": "lsp_show_diagnostics_panel" },
+  // Go to next diagnostic
+  { "keys": ["f2"], "command": "lsp_next_diagnostic" },
+  // Go to previous diagnostic
+  { "keys": ["shift+f2"], "command": "lsp_previous_diagnostic" },
+  // Signature help
+  { "keys": ["super+p"], "command": "lsp_signature_help" },
+
+  { "keys": ["super+equals"], "command": "unfold" },
+  { "keys": ["super+plus"], "command": "unfold" },
+  { "keys": ["super+keypad_plus"], "command": "noop" },
+
+  { "keys": ["super+minus"], "command": "fold" },
+  { "keys": ["super+keypad_minus"], "command": "noop" },
+
+  // TODO: LSP Folding
+  // Fold region (IntelliJ: Cmd + -)
+  // { "keys": ["super+minus"], "command": "lsp_fold" },
+  // {
+// 	  "keys": ["super+minus"],
+// 	  "command": "smart_command_fallback",
+// 	  "args": {
+// 	    "primary": "lsp_fold",
+// 	    "fallback": "fold"
+// 	  }
+  // },
+  // Unfold region (IntelliJ: Cmd + +)
+  // { "keys": ["super+equals"], "command": "lsp_unfold" },
+  // { "keys": ["super+plus"], "command": "lsp_unfold" },
+  // {
+// 	  "keys": ["super+equals"],
+// 	  "command": "smart_command_fallback",
+// 	  "args": {
+// 	    "primary": "lsp_unfold",
+// 	    "fallback": "unfold"
+// 	  }
+  // },
+  // {
+// 	  "keys": ["super+plus"],
+// 	  "command": "smart_command_fallback",
+// 	  "args": {
+// 	    "primary": "lsp_unfold",
+// 	    "fallback": "unfold"
+// 	  }
+  // },
+  // Fold all (IntelliJ: Cmd + Shift + -)
+  // { "keys": ["super+shift+minus"], "command": "lsp_fold_all" },
+  // {
+// 	  "keys": ["super+shift+minus"],
+// 	  "command": "smart_command_fallback",
+// 	  "args": {
+// 	    "primary": "lsp_fold_all",
+// 	    "fallback": "fold"
+// 	  }
+  // },
+  // Unfold all (IntelliJ: Cmd + Shift + +)
+  // { "keys": ["super+shift+equals"], "command": "lsp_unfold_all" }
+  // {
+// 	  "keys": ["super+shift+equals"],
+// 	  "command": "smart_command_fallback",
+// 	  "args": {
+// 	    "primary": "lsp_unfold_all",
+// 	    "fallback": "unfold_all"
+// 	  }
+  // }
+
+  // Noop commands
+  { "keys": ["super+2"], "command": "noop"},
+  { "keys": ["super+3"], "command": "noop"},
+  { "keys": ["super+4"], "command": "noop"},
+  { "keys": ["super+5"], "command": "noop"},
+  { "keys": ["super+6"], "command": "noop"},
+  { "keys": ["super+7"], "command": "noop"},
+  { "keys": ["super+8"], "command": "noop"},
+  { "keys": ["super+9"], "command": "noop"},
+]
